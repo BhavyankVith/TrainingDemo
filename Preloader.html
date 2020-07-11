@@ -1,0 +1,43 @@
+<html>
+    <head>
+    <script src="jquery-1.10.2.min.js">
+        
+    </script>
+    <script>
+        jQuery(window).load(function(){
+            jQuery("#status").fadeOut(13000);
+            jQuery("#preloader").delay(13000).fadeOut("fast");
+        })
+    </script>
+    <style>
+        #preloader{
+            position: fixed;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:white;
+            z-index: 9999;
+            height: 100%;
+            width: 100%;
+        }    
+        #status{
+            width: 920px;
+            height: 532px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            margin: -266px 0 0 -460px;
+            background: url('loader2.gif') center no-repeat;
+        }
+        body{
+            background: gold;
+        }
+    </style>
+    </head>
+    <body>
+       <div id="preloader">
+            <div id="status"></div>
+        </div>
+    </body>
+</html>
